@@ -86,7 +86,7 @@ static int guarded_main() {
             std::cout << std::format("  ntoskrnl={:#x}\n", info.ntos_base);
 
             // ---- EPROCESS leak + lsass walk ----
-            std::cout << "[*] Finding lsass.exe...\n";
+            std::cout << "[*] Finding lsass.exe........\n";
             lsass = find_lsass(h);
 
             // ---- Find lsasrv.dll ----
